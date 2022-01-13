@@ -55,7 +55,7 @@ def saveImageToFolder(image, path, fileName):
 def main():
     print(f"Cropping all images in base folder {pathToYcbModelsFolder}:\n========================================================\n")
 
-    for filePath in glob.iglob(f'{pathToYcbModelsFolder}/**', recursive=True):
+    for filePath in sorted(glob.iglob(f'{pathToYcbModelsFolder}/**', recursive=True)):
         if os.path.isfile(filePath) and filePath.endswith(
                 ".jpg") and not "masks" in filePath and not "poses" in filePath:
 

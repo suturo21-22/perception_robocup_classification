@@ -12,6 +12,8 @@ It will download all objects available on the [ycb website](http://ycb-benchmark
 
 ## python script crop images
 
+⚠️ You may need to remove some objects that have no `masks` subfolder from the dataset for the script to work
+
 run the script with the following command:
 ```
 python3 cropYcbImages.py
